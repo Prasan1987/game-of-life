@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building r2r project..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing r2r project..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying r2r project....'
+            }
+        }
+    }
+}
